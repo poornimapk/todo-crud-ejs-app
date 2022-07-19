@@ -1,0 +1,154 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background: #F2BFD7;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.todo-container {
+  color: rgb(151, 50, 50);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  background: #F6D7E8;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo {
+  width: 500px;
+}
+
+h2 {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+input {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 2px;
+  padding: 5px;
+  border-radius: 5px;
+  height: 20px;
+  width: 100%;
+}
+
+textarea {
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.todo-header button {
+  color: rgb(151, 50, 50);
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  background-color: #F2BFD7;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.todo-list-item {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #DCD0EA;
+  display: flex;
+  flex-direction: row;  
+}
+
+.todo-list-item-content {
+  font-size: .8rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.todo-list-item form {
+  width: 100%;
+  display: flex;
+}
+
+.todo-list-item input {
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.todo-list-item .confirm {
+  color: rgb(151, 50, 50);
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #F2BFD7;
+  margin-left: 5px;
+  max-height: 30px;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+}
+
+.todo-list-item .cancel {
+  color: rgb(151, 50, 50);
+  text-decoration: none;
+  font-size: .8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #F2BFD7;
+  margin-left: 5px;
+  max-height: 30px;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+}
+
+.todo-list-item div {
+  flex-grow: 2;  
+  /* align-self: space-between; */
+}
+
+.todo-list-item .edit {
+  color: rgb(21, 182, 75);
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: auto;  
+}
+
+.todo-list-item .remove {
+  color: red;
+  margin-right: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: auto;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
